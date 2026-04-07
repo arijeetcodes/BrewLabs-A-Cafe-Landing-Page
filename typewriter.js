@@ -5,9 +5,8 @@ const texts = [
   "HERBAL TEA",
   "HOT CHOCOLATE",
   "ESPRESSO",
-  "AMERICANE",
+  "AMERICANO",
   "CAPPUCCINO",
-  "LATTE",
   "MOCHA",
   "ICED LATTE",
   "COLD BREW",
@@ -31,15 +30,15 @@ function typeWriter() {
   }
 }
 
-function eraseText(){
-    if (textElements.innerHTML.length > 0){
-        textElements.innerHTML = textElements.innerHTML.slice(0, -1);
-        setTimeout(eraseText, 50);
-    } else{
-        textIndex = (textIndex + 1) % texts.length;
-        characterIndex = 0;
-        setTimeout(typeWriter, 500);
-    }
+function eraseText() {
+  if (textElements.innerHTML.length > 0) {
+    textElements.innerHTML = textElements.innerHTML.slice(0, -1);
+    setTimeout(eraseText, 50);
+  } else {
+    textIndex = (textIndex + 1) % texts.length;
+    characterIndex = 0;
+    setTimeout(typeWriter, 500);
+  }
 }
 
 window.onload = typeWriter;
