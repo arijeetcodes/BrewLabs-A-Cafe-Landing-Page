@@ -243,6 +243,41 @@ li a:hover {
   line-height: 20px;
   margin: 20px 0;
 }
+.section-content button {
+  margin-top: 20px;
+}
+.social-links i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  /* increasaes the width area between the links */
+  height: 3rem;
+  /* increases the height area around the links */
+  background-color: transparent;
+  /* turns the links area transparent color */
+  border: 0.2rem solid var(--main-color);
+  /* gives a border of 0.2rem of color */
+  border-radius: 50%;
+  /* smoothen the sharp edges of the area by 50% */
+  color: var(--main-color);
+  /* turns the icon color */
+  margin: 5px 15px;
+  /* gives a margin of 5px top-bottom and 15px left-right */
+  font-size: 1.5rem;
+  /* increases the icon size */
+  transition: 0.2s linear;
+}
+.social-links i:hover {
+  scale: 1.3;
+  /* increases the scale of the icon area to 1.3 when hovered */
+  color: black;
+  /* turns the icon color black when hovered */
+  background-color: var(--main-color);
+  /* turns the background area color when hovered */
+  filter: drop-shadow(0 0 10px var(--main-color));
+  /* creates a shadow effect when hovered */
+}
 /* Our Story End */
 
 /* Coffee Start */
@@ -270,7 +305,8 @@ li a:hover {
 .content-section p {
   max-width: 500px;
   /* reduces the area width to 500px */
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin: 20px 0;
   font-family: sans-serif;
   color: #fff;
 }
